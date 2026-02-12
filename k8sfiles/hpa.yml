@@ -1,12 +1,13 @@
+---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: bankapp-hpa
+  name: bloodapp-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: nginx-deployment
+    name: bloodapp
   minReplicas: 2
   maxReplicas: 5
   metrics:
@@ -16,4 +17,3 @@ spec:
       target:
         type: Utilization
         averageUtilization: 70
-
