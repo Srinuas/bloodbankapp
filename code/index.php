@@ -18,7 +18,7 @@ if(isset($_POST['but_submit'])){
 
         if($count > 0){
             $_SESSION['uname'] = $uname;
-            header('Location: index.html');
+            header('Location: dashboard.php');
         }else{
             echo '<script type ="text/JavaScript">';  
 echo 'alert(" Wrong Username or Password ")';  
@@ -50,7 +50,7 @@ echo '</script>';
                     </div>
                     <div style="text-align: center; margin-top: 10px;">
                         <p>New user? <a href="signup.php" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Register Here</a></p>
-                        <p><a href="index.html" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Home Page</a></p>
+                        <p><a href="dashboard.php" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Home Page</a></p>
                     </div>
                 </div>
             </form>
