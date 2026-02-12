@@ -48,6 +48,9 @@ echo '</script>';
                     <div>
                         <input type="submit" value="Submit" name="but_submit" id="but_submit" />
                     </div>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <p>New user? <a href="signup.php" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Register Here</a></p>
+                    </div>
                 </div>
             </form>
         </div>
