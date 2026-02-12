@@ -50,6 +50,7 @@ echo '</script>';
                     </div>
                     <div style="text-align: center; margin-top: 10px;">
                         <p>New user? <a href="signup.php" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Register Here</a></p>
+                        <p><a href="index.html" style="color: #31a9b1; text-decoration: none; font-weight: bold;">Home Page</a></p>
                     </div>
                 </div>
             </form>
