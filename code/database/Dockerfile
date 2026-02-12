@@ -3,16 +3,14 @@
 #EXPOSE 3306
 #ENV MYSQL_ROOT_PASSWORD=admin123
 
-
-
 FROM mysql/mysql-server:5.7
 
-# SQL scripts automatic ga run avvadaniki
+# 1. Environment variables ikkade set chestunnam
+ENV MYSQL_ROOT_PASSWORD=admin123
+
+# 2. SQL scripts ni copy chestunnam
+# Idi container start ayyetappudu automatic ga execute avtundi
 COPY init.sql /docker-entrypoint-initdb.d/
 
-# External access allow cheyadaniki idi chala important
-ENV MYSQL_ROOT_HOST=%
-ENV MYSQL_ROOT_PASSWORD=admin123
-ENV MYSQL_DATABASE=customers
-
+# 3. MySQL default port
 EXPOSE 3306
