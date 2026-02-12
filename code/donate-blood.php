@@ -16,9 +16,20 @@ if(isset($_POST['but_logout'])){
 <html>
     <head></head>
     <body>
-            <form method='post' action="">
-            <input type="submit" value="Logout" name="but_logout">
-        </form>
+	    <header class="header-container">
+	      <div style="font-weight: bold; font-size: 20px; color: #31a9b1;">Srinu Blood Bank</div>
+	      
+	      <div class="profile-dropdown">
+	        <button onclick="toggleMenu()" class="profile-btn">
+	          User: <?php echo htmlspecialchars($_SESSION['uname']); ?> ▼
+	        </button>
+	        <div id="myDropdown" class="dropdown-content">
+	          <p>Logged in as: <b><?php echo htmlspecialchars($_SESSION['uname']); ?></b></p>
+	          <a href="edit-profile.php">Edit Profile</a>
+	          <a href="logout.php" style="color: red; font-weight: bold;">Logout</a>
+	        </div>
+	      </div>
+	    </header>
     </body>
 </html>
 
