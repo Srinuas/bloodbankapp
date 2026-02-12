@@ -1,28 +1,29 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: bloodapp
   labels:
-    app: nginx
+    app: bloodapp
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: bloodapp
   template:
     metadata:
       labels:
-        app: nginx
+        app: bloodapp
     spec:
       containers:
-      - name: bankapp
-        image: shaikmustafa/bankapp:app
+      - name: bloodapp
+        image: srinuas/bloodapp:apimg
         ports:
         - containerPort: 80
 
         envFrom:
         - configMapRef:
-            name: bankapp-config
+            name: bloodapp-config
 
         resources:
           requests:
@@ -45,4 +46,3 @@ spec:
             port: 80
           initialDelaySeconds: 10
           periodSeconds: 5
-
