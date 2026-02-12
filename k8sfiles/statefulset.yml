@@ -1,21 +1,22 @@
+---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: mysql
+  name: bloodsql
 spec:
-  serviceName: "mysql"
+  serviceName: "bloodsqlsvc"
   replicas: 1
   selector:
     matchLabels:
-      app: app-database
+      app: bloodsql
   template:
     metadata:
       labels:
-        app: app-database
+        app: bloodsql
     spec:
       containers:
-      - name: nginx
-        image: shaikmustafa/bankapp:db
+      - name: bloodsql
+        image: srinuas/bloodapp:dbimg
         ports:
         - containerPort: 80
           name: web
@@ -29,15 +30,14 @@ spec:
             memory: "512Mi"
 
         volumeMounts:
-        - name: www
+        - name: dbvol
           mountPath: /usr/share/nginx/html
 
   volumeClaimTemplates:
   - metadata:
-      name: www
+      name: dbvol
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
           storage: 1Gi
-
