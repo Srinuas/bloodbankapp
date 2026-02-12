@@ -146,7 +146,7 @@ class script{
           <div class="donate-blood-hero section-container">
             <div class="donate-blood-max-width max-content-container">
               <div class="donate-blood-content-container">
-                <span class="donate-blood-text">LTI Blood Bank</span>
+                <span class="donate-blood-text">Srinu Blood Bank</span>
                 <div class="donate-blood-card">
                   <h4 class="donate-blood-text01 heading4">Donate Blood</h4>
                   <svg viewBox="0 0 1024 1024" class="donate-blood-icon">
