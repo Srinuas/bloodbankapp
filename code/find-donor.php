@@ -192,7 +192,7 @@ table, th, td {
 <button type="submit" formaction="/search.php" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Advanced Search</button><br><br>
 </form> 
           <form method="post">
-<button type="submit" formaction="/index.html" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Redirect to home page</button><br><br>
+<button type="submit" formaction="/dashboard.php" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Redirect to home page</button><br><br>
 </form>
 		  <?php
 $script = new script();
