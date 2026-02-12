@@ -9,7 +9,7 @@ if(!isset($_SESSION['uname'])){
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dashboard - LTIBB</title>
+    <title>Dashboard - Srinu BB</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
@@ -60,7 +60,7 @@ if(!isset($_SESSION['uname'])){
   </head>
   <body>
     <header class="header-container">
-      <div style="font-weight: bold; font-size: 20px; color: #31a9b1;">LTI Blood Bank</div>
+      <div style="font-weight: bold; font-size: 20px; color: #31a9b1;">Srinu Blood Bank</div>
       
       <div class="profile-dropdown">
         <button onclick="toggleMenu()" class="profile-btn">
@@ -80,7 +80,7 @@ if(!isset($_SESSION['uname'])){
           <div class="home-max-width max-content-container">
             <div class="home-content-container">
               <h1 class="home-heading">
-                <span class="home-text">Welcome to LTI Blood Bank Dashboard</span>
+                <span class="home-text">Welcome to Srinu Blood Bank Dashboard</span>
                 <br><br>
                 <a href="signup.php"><button style="background-color:blue;color:white;width:150px;height:40px;">Signup New</button></a>
                 <a href="/bmi/index.html"><button style="background-color:blue;color:white;width:150px;height:40px;">BMI</button></a>
