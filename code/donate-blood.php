@@ -168,7 +168,7 @@ class script{
 		
           <div class="donate-blood-section-one section-container">
   <form method="post">
-<button type="submit" formaction="/index.html" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Redirect to home page</button><br><br>
+<button type="submit" formaction="/dashboard.php" style="background: grey; height: 45px; width: 200px; color:white; font:oblique;">Redirect to home page</button><br><br>
 </form>
               <span class="donate-blood-text04"> 
                   <table>
