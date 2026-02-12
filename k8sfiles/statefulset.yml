@@ -4,7 +4,7 @@ kind: StatefulSet
 metadata:
   name: bloodsql
 spec:
-  serviceName: "bloodsqlsvc"
+  serviceName: "mysqldb"
   replicas: 1
   selector:
     matchLabels:
