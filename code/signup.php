@@ -13,15 +13,20 @@ class script{
                 $this->con = mysqli_connect($server,$user,$pass,$db) or die("unable to connect");
         }
 
-        public function add($username,$name,$password){
-                $sql = "insert into users(username,name,password) values('".urlencode($username)."','".urlencode($name)."','".urlencode($password)."')";
-                $res = mysqli_query($this->con,$sql) or die("unable to perform operation");
-                if($res) {
-                        echo "Data Added ";
-                } else {
-                        echo "Operational Failure";
-                }
-        }
+		public function add($username, $name, $password) {
+    		$sql = "insert into users(username,name,password) values('".urlencode($username)."','".urlencode($name)."','".urlencode($password)."')";
+    		$res = mysqli_query($this->con, $sql) or die("unable to perform operation");
+    		if($res) {
+        // Ikkada Login link add chestunnam
+        		echo "<div style='text-align:center; margin-top:20px; font-weight:bold; color:green;'>";
+        		echo "Data Added Successfully! ";
+        		echo "<a href='index.php' style='color:blue; text-decoration:underline;'>Click here to Login Now</a>";
+        		echo "</div>";
+    		} 
+			else {
+        		echo "Operational Failure";
+    		}
+		}
                 public function getdata() {
                         $sql = "select * from users";
                         $res = mysqli_query($this->con,$sql) or die("unable to fetch");
